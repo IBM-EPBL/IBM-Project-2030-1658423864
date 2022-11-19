@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Quality Prediction</title>
+<style>
+body 
+{
+background-image:url({{url_for('static', filename='image/background.png')}});
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+#ip3 {
+border-radius: 15px 50px 30px 5px;
+background: rgb(244, 248, 249);
+padding: 20px; 
+width: 200px;
+height: 15px; 
+}
+</style>
+</head>
+
+<body><center><br><br><br>
+    <h1>Efficient of water quality and predication</h1>
+    <h2>Using Random Forest</h2><br><h3>- By Pavan Sidharth</h3>
+    <center><div class="header1"><font color="#FF0000" font-family="Fascinate Inline" size
+    <br><br>
+     <form class="main" action="/login" method="post">
+     <br><br>
+     <input type="text" name="year" id="ip3" placeholder="Enter Year"/>
+    <br><br>
+    <input type="text" name="do" id="ip3" placeholder="Enter D.0"/>
+    <br><br>
+    <input type="text" name="ph" id="ip3" placeholder="Enter PH" />
+    <br><br>
+    <input type="text" name="co" id="ip3" placeholder="Enter Conductivity"/>
+    <br><br>
+    <input type="text" name="bod" id="ip3" placeholder="Enter B.O.D"/>
+    <br><br>
+    <input type="text" name="na" id="ip3" placeholder="Enter Nitratenen"/>
+    <br><br>
+    <input type="text" name="tc" id="ip3" placeholder="Enter Total Coliform" />
+    <br><br>
+    <input type="submit" class="logbtn" value="Predict" style="width: 7%;height: 25px;></center>
+    <br><br><br>
+    <div class="bor"><center><b><font color="red" size=5>{{showcase}}</font></b></center>
+     </form>
+</body>
+</html>
